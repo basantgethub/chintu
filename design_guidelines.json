@@ -1,0 +1,150 @@
+{
+  "identity": {
+    "name": "Lata Dairy Portal",
+    "persona": "E1: The Anti-AI Designer",
+    "tone": "Fresh, Organic, Trustworthy, Efficient",
+    "archetype": "Organic & Earthy (with a Business Twist)"
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Fraunces, serif",
+      "body": "Manrope, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl font-bold tracking-tight",
+      "h2": "text-3xl font-semibold tracking-tight",
+      "h3": "text-2xl font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm font-medium text-muted-foreground"
+    },
+    "rules": [
+      "Use Fraunces ONLY for the Brand Name and major Landing Page headings.",
+      "Use Manrope for all Dashboard UI, Tables, and Forms.",
+      "Never use Inter for headings.",
+      "Headings must have tight tracking (tracking-tight)."
+    ]
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "Dairy Deep Blue",
+        "hex": "#1e3a8a",
+        "tailwind": "bg-blue-900 text-white hover:bg-blue-800"
+      },
+      "secondary": {
+        "name": "Fresh Grass Green",
+        "hex": "#15803d",
+        "tailwind": "bg-green-700 text-white hover:bg-green-600"
+      },
+      "accent": {
+        "name": "Alert Red",
+        "hex": "#dc2626",
+        "tailwind": "text-red-600 bg-red-50"
+      },
+      "background": {
+        "main": "#fdfbf7",
+        "tailwind": "bg-[#fdfbf7]",
+        "card": "#ffffff"
+      },
+      "text": {
+        "main": "#1c1917",
+        "muted": "#78716c"
+      }
+    },
+    "rules": [
+      "Avoid generic 'SaaS Purple' or 'Teal'.",
+      "Use 'Stone' grays (warm) instead of 'Slate' (cool) for borders and text.",
+      "Primary buttons must be Deep Blue.",
+      "Success states (New Sale) must be Fresh Green."
+    ]
+  },
+  "layout": {
+    "grid_system": {
+      "dashboard": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "landing": "grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12"
+    },
+    "spacing": {
+      "container_padding": "p-6 md:p-8",
+      "section_gap": "gap-8",
+      "card_padding": "p-6"
+    },
+    "radius": "rounded-xl",
+    "rules": [
+      "Dashboard: Sidebar (col-span-2) + Main Content (col-span-10).",
+      "Cards must have 'rounded-xl' and 'border border-stone-200'.",
+      "Use 'shadow-sm' for cards, never large drop shadows unless hovering.",
+      "Tables must be 'compact' but with generous padding on rows (py-3)."
+    ]
+  },
+  "components": {
+    "buttons": {
+      "primary": "h-10 px-6 rounded-lg bg-blue-900 text-white hover:bg-blue-800 transition-all shadow-sm font-medium",
+      "secondary": "h-10 px-6 rounded-lg bg-white border border-stone-200 text-stone-700 hover:bg-stone-50 transition-all font-medium",
+      "ghost": "hover:bg-stone-100 text-stone-600"
+    },
+    "cards": {
+      "base": "bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden",
+      "hover": "hover:shadow-md transition-shadow duration-200"
+    },
+    "inputs": {
+      "base": "h-10 rounded-lg border-stone-200 focus:ring-2 focus:ring-blue-900/20 focus:border-blue-900 bg-white"
+    },
+    "tables": {
+      "header": "bg-stone-50 text-stone-500 text-xs uppercase tracking-wider font-semibold",
+      "row": "border-b border-stone-100 hover:bg-stone-50/50 transition-colors"
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Use subtle noise texture on the sidebar background if possible.",
+    "glassmorphism": "Use 'backdrop-blur-md bg-white/80' for sticky headers only.",
+    "icons": "Use Lucide React icons. Stroke width 1.5px for elegance.",
+    "motion": "Use 'framer-motion' for page transitions and list entry (staggered)."
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1709733971576-8caa9df3abf9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxjb3dzJTIwZ3JhemluZyUyMGdyZWVuJTIwcGFzdHVyZSUyMGxhbmRzY2FwZXxlbnwwfHx8Z3JlZW58MTc2NjU2MzQ0NXww&ixlib=rb-4.1.0&q=85",
+      "desc": "Lush green field with cows, perfect for Login/Landing hero background."
+    },
+    "product_milk": {
+      "url": "https://images.unsplash.com/photo-1567011345445-fd175f248019?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxmcmVzaCUyMG1pbGslMjBib3R0bGUlMjBnbGFzcyUyMGRhaXJ5JTIwZmFybXxlbnwwfHx8d2hpdGV8MTc2NjU2MzQ0NHww&ixlib=rb-4.1.0&q=85",
+      "desc": "Glass of milk on white table, clean product shot."
+    },
+    "product_paneer": {
+      "url": "https://images.unsplash.com/photo-1686998424326-d3ca77fe02fc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHw0fHxwYW5lZXIlMjBjdXJkJTIwZ2hlZSUyMGRhaXJ5JTIwcHJvZHVjdHN8ZW58MHx8fHwxNzY2NTYzNDQ5fDA&ixlib=rb-4.1.0&q=85",
+      "desc": "Artisanal cheese/paneer making process."
+    },
+    "user_avatar": {
+      "url": "https://images.unsplash.com/photo-1671450960874-0903baf942c5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjBkYWlyeSUyMHNob3AlMjBvd25lciUyMHBvcnRyYWl0fGVufDB8fHx8MTc2NjU2MzQ0N3ww&ixlib=rb-4.1.0&q=85",
+      "desc": "Shop owner profile picture."
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALL FONTS: Add '@fontsource/fraunces' and '@fontsource/manrope' to package.json immediately.",
+    "2. THEME SETUP: Update 'tailwind.config.js' to use the 'Stone' color palette for neutrals and 'Blue-900' for primary.",
+    "3. LAYOUT: Build a 'DashboardLayout' component that uses a fixed sidebar and scrollable main content area.",
+    "4. COMPONENTS: Heavily customize Shadcn components. Remove the default 'slate' look. Use 'rounded-xl' everywhere.",
+    "5. TABLES: This is a data-heavy app. Ensure tables are readable. Use alternating row colors (zebra striping) very subtly (bg-stone-50/30).",
+    "6. MOBILE: Ensure the 'Daily Sales' page is optimized for mobile touch (large tap targets)."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: 'transition: all'. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add '.App { text-align: center; }' in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Examine existing components to understand the project's component patterns before creating new ones",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use 'sonner' for toasts. Sonner component are located in '/app/src/components/ui/sonner.tsx'"
+  ]
+}
