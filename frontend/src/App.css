@@ -1,34 +1,117 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Lata Dairy Custom Styles */
+
+/* Sidebar styles */
+.sidebar-link {
+  @apply flex items-center gap-3 px-4 py-3 rounded-xl text-stone-600 font-medium transition-colors duration-200;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.sidebar-link:hover {
+  @apply bg-stone-100 text-stone-900;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.sidebar-link.active {
+  @apply bg-blue-900 text-white;
 }
 
-.App-link {
-    color: #61dafb;
+.sidebar-link.active:hover {
+  @apply bg-blue-800;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+/* Stat card styles */
+.stat-card {
+  @apply bg-white rounded-xl border border-stone-200 p-6 shadow-sm;
+}
+
+.stat-card-value {
+  @apply text-3xl font-bold text-stone-900 tracking-tight;
+}
+
+.stat-card-label {
+  @apply text-sm font-medium text-stone-500 mt-1;
+}
+
+/* Form input styles */
+.form-input {
+  @apply h-10 rounded-lg border-stone-200 focus:ring-2 focus:ring-blue-900/20 focus:border-blue-900 bg-white transition-shadow duration-200;
+}
+
+/* Button variants */
+.btn-primary {
+  @apply h-10 px-6 rounded-lg bg-blue-900 text-white hover:bg-blue-800 transition-colors shadow-sm font-medium;
+}
+
+.btn-secondary {
+  @apply h-10 px-6 rounded-lg bg-white border border-stone-200 text-stone-700 hover:bg-stone-50 transition-colors font-medium;
+}
+
+.btn-success {
+  @apply h-10 px-6 rounded-lg bg-green-700 text-white hover:bg-green-600 transition-colors shadow-sm font-medium;
+}
+
+.btn-ghost {
+  @apply hover:bg-stone-100 text-stone-600 transition-colors;
+}
+
+/* Table enhancements */
+.table-container {
+  @apply bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden;
+}
+
+/* Badge styles */
+.badge-success {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800;
+}
+
+.badge-warning {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800;
+}
+
+.badge-danger {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800;
+}
+
+/* Page header */
+.page-header {
+  @apply mb-8;
+}
+
+.page-title {
+  @apply text-3xl font-bold text-stone-900 font-fraunces;
+}
+
+.page-description {
+  @apply text-stone-500 mt-1;
+}
+
+/* Empty state */
+.empty-state {
+  @apply flex flex-col items-center justify-center py-16 text-center;
+}
+
+.empty-state-icon {
+  @apply w-16 h-16 text-stone-300 mb-4;
+}
+
+.empty-state-title {
+  @apply text-lg font-medium text-stone-900 mb-1;
+}
+
+.empty-state-description {
+  @apply text-stone-500 mb-4;
+}
+
+/* Loading spinner */
+.spinner {
+  @apply animate-spin h-5 w-5 border-2 border-stone-300 border-t-blue-900 rounded-full;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stat-card-value {
+    @apply text-2xl;
+  }
+  
+  .page-title {
+    @apply text-2xl;
+  }
 }
